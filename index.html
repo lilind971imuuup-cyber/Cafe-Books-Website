@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Cafe Books</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS SENDIRI -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Cafe Books</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#promo">Promo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- BANNER HOME -->
+<section class="banner-home">
+  <div class="overlay">
+    <div class="container text-center">
+      <h1 class="title-home">Cafe Books</h1>
+      <p class="subtitle-home">
+        Cozy Place • Warm Tea • Good Stories
+      </p>
+      <a href="#promo" class="btn btn-vintage mt-3">See Promo</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO -->
+<section id="promo" class="py-5">
+<div class="container">
+  <h2 class="text-center mb-4">Promo This Week</h2>
+
+  <div class="row g-4">
+
+    <!-- CARD 1 -->
+    <div class="col-md-4">
+      <div class="card promo-card">
+        <img src="red.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5>Hibiscus Red Tea</h5>
+          <p>Teh bunga hibiscus dengan rasa segar dan manis alami.</p>
+          <a class="btn btn-vintage">Buy</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-md-4">
+      <div class="card promo-card">
+        <img src="blue.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5>Blue Ocean</h5>
+          <p>Telang milk tea dengan warna estetik dan rasa lembut.</p>
+          <a class="btn btn-vintage">Buy</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-md-4">
+      <div class="card promo-card">
+        <img src="tea.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5>Fizzy Chamomile</h5>
+          <p>Chamomile sparkling yang menenangkan hati.</p>
+          <a class="btn btn-vintage">Buy</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+
+<form class="contact-form">
+  <input type="text" placeholder="Nama" required>
+  <input type="email" placeholder="Email" required>
+  <textarea placeholder="Pesan"></textarea>
+  <button type="submit">Kirim</button>
+</form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 Cafe Books – Cozy Vintage Vibes</p>
+</footer>
+
+<script>
+document.querySelector('.contact-form')
+.addEventListener('submit', e => {
+  e.preventDefault();
+  alert('Pesan terkirim beb!');
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

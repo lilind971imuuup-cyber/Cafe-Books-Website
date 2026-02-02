@@ -1,0 +1,78 @@
+body {
+  background-color: #f3efe6;
+  font-family: Georgia, serif;
+}
+
+/* NAVBAR */
+.navbar-custom {
+  background: #2f1f14;
+}
+
+/* BANNER */
+.banner-home {
+  background-image: url("banner-cafe.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 92vh;
+}
+
+.overlay {
+  background: rgba(20,12,6,0.6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-home {
+  color: #f5e6c8;
+  font-size: 54px;
+}
+
+.subtitle-home {
+  color: #e8d6b0;
+}
+
+/* BUTTON */
+.btn-vintage {
+  background: #c8a97e;
+  color: #2b1b10;
+  border: none;
+}
+
+.btn-vintage:hover {
+  background: #b3926a;
+}
+
+/* CARD */
+.promo-card {
+  border-radius: 12px;
+  background: #fffaf0;
+  transition: 0.3s;
+}
+
+.promo-card:hover {
+  transform: translateY(-6px);
+}
+
+/* CONTACT */
+.contact {
+  background: #e6ddc6;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin: 6px 0;
+  padding: 8px;
+}
+
+/* FOOTER */
+.footer {
+  background: #2b1b10;
+  color: #e8d6b0;
+  text-align: center;
+  padding: 20px;
+}
